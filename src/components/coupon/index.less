@@ -1,0 +1,188 @@
+
+.item{
+  width: 710px;
+  height: 194px;
+  background: #fff;
+  border: 2px solid #CCCCCC;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  box-sizing: border-box;
+  // box-shadow: 0 2px 8px 0 #9B9B9B;
+  position: relative;
+  .info{
+    display: flex;
+    align-items: center;
+    position: relative;
+    .detail{
+      display: flex;
+      align-content: space-between;
+      justify-content: space-between;
+      flex-direction: column;
+      margin-left: 20px;
+      .title{
+        .topic{
+          font-size: 36px;
+          font-weight: bold;
+        }
+        .descr{
+          font-size: 24px;
+          color: #666;
+          width: 366px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp:2;
+          -webkit-box-orient: vertical;
+        }
+      }
+      .desc{
+        margin-top: 10px;
+        .num{
+          margin-top: 10px;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  .ticketInfo{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tips{
+    position: absolute;
+    top: -20px;
+    left: 400px;
+    width: 154px;
+    height: 154px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .des{
+    font-size: 22px;
+    text-align: center;
+  }
+  .flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    border: 2px solid #FC5F46;
+    color: #FC5F46;
+    border-radius: 100px;
+    font-size: 22px;
+    position: relative;
+    button{
+      opacity: 0;
+      position: absolute;top: 0;left: 0;width: 100%;height: 100%;
+    }
+  }
+  .given,.gift{
+    .avatar{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+    .status{
+      position: relative;
+      font-size: 22px;
+      background: #ccc;
+      color: #fff;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -30px;
+    }
+  }
+  .gift{
+    .status{
+      background: #FF5E51;
+    }
+  }
+  .btn{
+    text-align: center;
+    .cost{
+      color: #4AAEE7;
+      font-size: 36px;
+      line-height: 50px;
+      text{
+        font-size: 80px;
+      }
+    }
+    .desc{
+      color: #000;
+      font-size: 22px;
+    }
+  }
+  &.ticket{
+    .cost{
+      color: #FC5F46;
+    }
+  }
+  &.used,&.timeout{
+    background: #E5E5E5;
+    .tips{
+      background-image: url(https://img.xianxiapai.net/saas/used.png);
+    }
+    .cost{
+      color: #999;
+    }
+  }
+  &.timeout{
+    .tips{
+      background-image: url(https://img.xianxiapai.net/saas/timeout.png);
+    }
+  }
+}
+.cover{
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto;
+  width: 710px;
+  .cir{
+    position: absolute;
+    left: 520px;
+    width: 20px;
+    height: 20px;
+    background: #f7f7f7;
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+  }
+  &.selected.ticket{
+    .ticket{
+      border: 3px solid #FC5F46;
+    }
+    .cir{
+      border: 3px solid #FC5F46;
+    }
+  }
+  &.selected.snack{
+    .snack{
+      border: 3px solid #4AAEE7
+    };
+    .cir{
+      border: 3px solid #4AAEE7;
+    }
+  }
+  .topCir{
+    top: -10px;
+  }
+  .dotted{
+    position: absolute;
+    top: 26px;
+    left: 530px;
+    width: 1px;
+    height: 140px;
+    border-left: 1px dotted #CCCCCC
+  }
+  .bottomCir{
+    bottom: -10px;
+  }
+}

@@ -1,0 +1,169 @@
+
+.popup,.giveCoupon,.newRP{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  .modal{
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    left: 125px;
+    width: 500px;
+    box-sizing: border-box;
+    .close{
+      position: absolute;
+      top: 105%;
+      left: 220px;
+      width: 60px;
+      height: 60px;
+      background: url(https://img.xianxiapai.net/glass/closeO.png) no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+    image{
+      width: 100%;
+    }
+  }
+}
+.giveCoupon{
+  .modal{
+    overflow: hidden;
+    border-radius: 16px;
+    background: #fff;
+    padding: 150px 50px 50px;
+    .icon{
+      position: absolute;
+      top: -150px;
+      left: 260px;
+      width: 480px;
+      height: 408px;
+      transform: rotate(-45deg);
+      background-image: linear-gradient(90deg, #FFF1EF 4%, #FFBFBA 98%);
+      border-radius: 50%;
+    }
+    .close{
+      position: absolute;
+      top: 10px;
+      left: auto;
+      right: 10px;
+      width: 60px;
+      height: 60px;
+      background: url(https://img.xianxiapai.net/glass/close.png) no-repeat;
+      background-size: 30px;
+      background-position: center;
+    }
+    .avatar{
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+    .name{
+      position: absolute;
+      top: 70px;
+      left: 120px;
+      font-size: 24px;
+    }
+    .title{
+      position: relative;
+      font-size: 42px;
+      display: block;
+    }
+    .shareTicket{
+      width: 400px;
+      height: 180px;
+      margin: 40px auto;
+    }
+    .btn{
+      font-size: 28px;
+      color: #fff;
+      border-radius: 100px;
+      width: 320px;
+      height: 60px;
+      margin: 10px auto;
+      background: #FC5F46;
+    }
+  }
+}
+.newRP{
+  .modal{
+    width: 500px;
+    height: 660px;
+    .img{
+      width: 100%;
+      height: 100%;
+    }
+    .shake{
+      animation: shake 0.8s ease forwards infinite;
+      @keyframes shake {
+        0%    {transform: scale(1);}
+        50%    {transform: scale(1.05);}
+        100%  {transform: scale(1)}
+      }
+    }
+    .flex{
+      background-image: linear-gradient(-180deg, #FEFEFE 3%, #FEC9B9 93%);
+      width: 390px;
+      height: 70px;
+      color: #E02420;
+      font-size: 30px;
+      border-radius: 100px;
+      position: absolute;
+      top: 500px;
+      left: 50px;
+    }
+    .btn{
+      border: 1px solid #FFE9E9;
+      box-shadow: 0 8px 16px 0 #D3202E;
+      background: transparent;
+      top: 540px;
+      color: #FFE9E9;
+    }
+  }
+  .open{
+    height: 600px;
+    opacity: 0;
+    animation: downIn 0.5s ease forwards;
+    @keyframes downIn {
+      0%    {transform: translateY(-25%);opacity: 0;}
+      100%  {transform: translateY(-50%);opacity: 1;}
+    }
+    .flex{
+      background: #3C312B;
+      color: #fff;
+      top: 390px;
+      left: 50px;
+    }
+    .btn{
+      border: 1px solid #3C312B;
+      box-shadow: none;
+      background: transparent;
+      color: #3C312B;
+      top: 490px;
+    }
+  }
+  button{
+    opacity: 0;
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;height: 100%;
+  }
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}

@@ -1,0 +1,118 @@
+.body{
+  padding: 60px 0;
+}
+.title{
+  text-align: center;
+  font-size: 24px;
+  color: #999;
+  margin-bottom: 40px;
+}
+.inputBox{
+  width: 670px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  .input{
+    width: 620px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    font-size: 24px;
+    &:last-child{
+      border-bottom: none;
+    }
+    .icon{
+      margin-right: 30px;
+      width: 40px;
+      height: 40px;
+      background-image: url(https://img.xianxiapai.net/saas/iconPhone.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      &.code{
+        background-image: url(https://img.xianxiapai.net/saas/iconCode.png);
+      }
+      &.cipher{
+        background-image: url(https://img.xianxiapai.net/saas/iconCipher.png);
+      }
+      &.account{
+        background-image: url(https://img.xianxiapai.net/saas/iconAccount.png);
+      }
+    }
+    input{
+      width: 620px;
+      height: 90px;
+      margin-right: 40px;
+    }
+    .eye{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 100%;
+      background-image: url(https://img.xianxiapai.net/saas/eyeOn.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      z-index: 1;
+      &.off{
+        background-image: url(https://img.xianxiapai.net/saas/eyeOff.png);
+      }
+    }
+    .getCode{
+      position: absolute;
+      top: 16px;
+      right: 0;
+      width: 180px;
+      height: 60px;
+      border: 2px solid #999;
+      border-radius: 8px;
+      font-size: 24px;
+      color: #999
+    }
+  }
+}
+.sBox{
+  padding: 0 40px;
+}
+.btn{
+  margin: 50px auto;
+  // position: fixed;
+  // bottom: 40px;
+  // left: 40px;
+  width: 670px;
+  height: 88px;
+  color: #fff;
+  background-image: linear-gradient(135deg, #FF6C8B 0%, #FB6B63 100%);
+  border-radius: 20px;
+}
+
+.rules{
+  background: #fff;
+  .rulesDesc{
+    padding: 20px 40px;
+    .view{
+      display: flex;
+      font-size: 24px;
+      color: #666;
+      text{
+        display: block;
+      }
+      .num{
+        width: 40px;
+      }
+      .desc{
+        width: 660px;
+        .text{
+          color: rgb(72, 72, 206);
+          text-decoration: underline;
+          display: inline!important;
+        }
+      }
+    }
+  }
+}

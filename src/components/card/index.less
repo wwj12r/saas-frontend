@@ -1,0 +1,76 @@
+
+.card{
+  position: relative;
+  width: 670px;
+  height: 320px;
+  background-image: url('https://img.xianxiapai.net/saas/card1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: #fff;
+  padding: 30px;
+  box-sizing: border-box;
+  &.deposit{
+    background-image: url('https://img.xianxiapai.net/saas/card1.png');
+    .amount{
+      display: none;
+    }
+  }
+  &.benefit{
+    background-image: url('https://img.xianxiapai.net/saas/card2.png');
+    .amount{
+      position: absolute;
+      top: 15px;
+      right: 30px;
+      font-size: 24px;
+      text{
+        font-size: 48px;
+      }
+    }
+  }
+  .title{
+    font-size: 34px;
+    width: 280px;
+  }
+  .type{
+    font-size: 26px;
+  }
+  .btn{
+    margin-top: 100px;
+    float: right;
+    width: 200px;
+    height: 52px;
+    font-size: 28px;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.left{
+  transform-origin: 0 100%;
+  left: 30px;
+  position: absolute;
+  top: 0;
+}
+.right{
+  transform-origin: 100% 100%;
+  right: 30px;
+  position: absolute;
+  top: 0;
+}
+.small{
+  width: 400px;
+  height: 240px;
+  z-index: 1;
+}
+.little{
+  width: 400px;
+  height: 240px;
+  transform: scale(0.9);
+}
+.normal{
+  margin: 0 auto;
+  background-size: 670px 320px
+}

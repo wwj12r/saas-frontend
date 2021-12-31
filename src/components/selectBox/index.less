@@ -1,0 +1,37 @@
+
+.selectBox{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  >view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 80px;
+    border: 2px solid #999;
+    border-radius: 8px;
+    color: #999;
+    position: relative;
+    &.on{
+      border: 2px solid #FC5F46;
+      background: #FFF7F8;
+      color: #FC5F46;
+    }
+    .desc{
+      position: absolute;
+      top: -18px;right: 0;
+      width: 80px;height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #FF001F;
+      font-size: 22px;
+      color: #fff;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+}

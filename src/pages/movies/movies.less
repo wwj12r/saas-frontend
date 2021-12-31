@@ -1,0 +1,335 @@
+
+.body{
+  background: #f7f7f7;
+  padding-top: 0;
+}
+.top{
+  width: 100%;
+  height: 420px;
+  background: #FF7865;
+  padding-top: 30px;
+  .info{
+    width: 690px;
+    height: 180px;
+    margin: 0 auto;
+    border-radius: 8px;
+    display: flex;
+    background: #fff;
+    box-sizing: border-box;
+    padding-left: 30px;
+    align-items: center;
+    justify-content: space-between;
+    .cinema{
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      .name{
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 34px;
+        font-weight: bold;
+      }
+      .address{
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin: 10px 0;
+        font-size: 24px;
+        color: #666;
+      }
+      .stateBox{
+        display: flex;
+        .state{
+          display: inline-block;
+          font-size: 20px;
+          color:rgba(252,95,70,1);
+          box-sizing: border-box;
+          height: 32px;
+          line-height: 28px;
+          padding: 0 8px;
+          border-radius:6px;
+          border:2px solid rgba(252,95,70,1);
+          margin-right: 12px;
+          white-space: nowrap;
+        }
+      }
+    }
+    .extra{
+      display: flex;
+      justify-content: space-between;
+      font-size: 24px;
+      padding: 0 40px;
+      width: 170px;
+      border-left: 2px solid #eee;
+      .vip,.snack{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &::before{
+          content: '';
+          margin-bottom: 10px;
+          width: 48px;
+          height: 48px;
+          display: block;
+          background: url(https://img.xianxiapai.net/xxpimg/20190107/1e3323c14cbd35a2018b318a9402b64c.png) no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+      }
+      .snack{
+        &::before{
+          background: url(https://img.xianxiapai.net/xxpimg/20190107/14b219d8305e8aeb17a344735fdcf5a9.png) no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+      }
+    }
+  }
+  .swiper{
+    width: 850px;
+    margin-left: -50px;
+    margin-top: 10px;
+    height: 230px;
+    swiper{
+      height: 100%;
+    }
+    
+    .moviePic{
+      width: 130px;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px 0 #C9392E;
+      border-radius: 8px;
+      overflow: hidden;
+      &.on{
+        transform: scale(1.2);
+        transition: all .5s;
+        border: 2px solid #fff;
+      }
+      image{
+        width: 130px;
+        height: 180px;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+.middle{
+  height: 120px;
+  flex-direction: column;
+  .title{
+    font-size: 36px;
+    font-weight: bold;
+  }
+  .info{
+    // padding: 0 30px;
+    width: 700px;
+    margin: 0 auto;
+    font-size: 24px;
+    color: #666;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.bottom{
+  position: relative;
+  .date{
+    width: 100%;
+    height: 80px;
+    white-space: nowrap;
+    background: #fff;
+    .dateTxt{
+      width: 160px;
+      font-size: 24px;
+      height: 80px;
+      display: inline-block;
+      line-height: 80px;
+      color: #999;
+      box-sizing: border-box;
+      &.on{
+        color: #FC5F46;
+        border-bottom: 2px solid #FC5F46;
+      }
+    }
+    ::-webkit-scrollbar{
+      width: 0;
+      height: 0;
+      color: transparent;
+    }
+  }
+  .ads{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background: #FFF7F8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #e0e0e0;
+    font-size: 24px;
+    color: #FC5F46;
+    padding: 0 42px;
+    box-sizing: border-box;
+    view{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    view::before{
+      content: '卡';
+      background: #ff554c;
+      color: #fff;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+    }
+    &::after{
+      content: '';
+      width: 24px;
+      height: 24px;
+      background: url('https://img.xianxiapai.net/xxpimg/20181226/7149943e9dcc62c237850c68c00ec018.png') no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+  .sceneBox{
+    .scene,.compareItem{
+      width: 750px;
+      height: 134px;
+      display: flex;
+      border-bottom: 2px solid #e0e0e0;
+      align-items: center;
+      box-sizing: border-box;
+      padding-right: 40px;
+      background: #fff;
+      .time{
+        width: 180px;
+        text-align: center;
+        .start{
+          font-size: 48px;
+          line-height: 50px;
+        }
+        .end{
+          font-size: 24px;
+          color: #b0b0b0;
+        }
+      }
+      .site{
+        width: 300px;
+        margin-left: 50px;
+        .type{
+          font-size: 28px;
+          line-height: 50px;
+        }
+        .number{
+          font-size: 24px;
+          color: #b0b0b0;
+        }
+      }
+      .price{
+        width: 200px;
+        text-align: right;
+        .present{
+          text{
+            font-size: 36px;
+          }
+          line-height: 50px;
+          height: 50px;
+          font-size: 28px;
+          // color: #FC5F46;
+        }
+        .vip{
+          font-size: 24px;
+          color: #36B163;
+        }
+      }
+      .btn{
+        margin-left: 80px;
+        width: 120px;
+        height: 52px;
+        border: 2px solid #FC5F46;
+        color: #FC5F46;
+        font-size: 28px;
+        border-radius: 100px;
+        float: right;
+      }
+    }
+    .compare{
+      margin-bottom: 20px;
+      .compareItem{
+        border-bottom: none;
+        .time{
+          margin-left: 47px;
+          width: 253px;
+          text-align: left;
+          .start{
+            display: flex;
+            align-items: center;
+            font-size: 26px;
+            color: #666;
+            .icon{
+              display: inline-block;
+              width: 56px;
+              height: 56px;
+              margin-right: 20px;
+              // background-image: url(https://img.xianxiapai.net/saas/maoyan.png);
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center;
+            }
+          }
+        }
+        &:last-child .icon{
+          // background-image: url(https://img.xianxiapai.net/saas/taopiao.png)!important;
+        }
+      }
+      .self{
+        .start{
+          color: #FC5F46!important;
+        }
+        .price{
+          .present{
+            text{
+              font-size: 48px;
+            }
+            font-size: 28px;
+            color: #FC5F46;
+          }
+          .vip{
+            color: #333;
+          }
+        }
+      }
+    }
+    .todayNone{
+      width: 100%;
+      height: 200px;
+      color: #666;
+      flex-direction: column;
+      background: #fff;
+      text{
+        font-size: 24px;
+      }
+      .btn{
+        margin-top: 20px;
+        width: 233px;
+        height: 52px;
+        border: 2px solid #666;
+        font-size: 28px;
+        border-radius: 100px;
+      }
+    }
+  }
+}

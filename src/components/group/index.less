@@ -1,0 +1,332 @@
+
+.top{
+  width: 100%;
+  // background: #fffef0;
+  // padding-bottom: 30px;
+  position: relative;
+  .rolling{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 300px;
+    height: 50px;
+    overflow: hidden;
+    z-index: 1;
+    .swiper{
+      height: 100px;
+    }
+    .rollingItem{
+      height: 50px;
+      background: rgba(74,74,74,0.60);
+      font-size: 24px;
+      color: #FFFFFF;
+      border-radius: 100px;
+      // animation: downIn 2s ease forwards infinite;
+      // @keyframes downIn {
+      //   0%    {transform: translateY(0);}
+      //   50%    {transform: translateY(-200%);}
+      //   100%  {transform: translateY(-200%)}
+      // }
+      &.none{
+        background: transparent;
+      }
+    }
+  }
+  .rollingBlock{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 300px;
+    height: 50px;
+    z-index: 1;
+  }
+  .topInfo{
+    padding-bottom: 30px;
+    .rule,.checkCoupon{
+      margin-top: 50px;
+      text-align: center;
+      justify-content: space-between;
+      color: #DFD1FF;
+      .topic{
+        font-size: 30px;
+      }
+      .info{
+        padding: 20px 120px;
+        font-size: 28px;
+        display: flex;
+        justify-content: space-between;
+        .flex{
+          &::before{
+            content: '';
+            width: 16px;
+            height: 16px;
+            background: #FCEA5A;
+            border-radius: 50%;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .checkCoupon{
+      font-size: 28px;
+      color: #FCEA5A;
+      text-decoration: underline;
+    }
+  }
+  .rulesBtn{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 126px;
+    height: 46px;
+    background-image: linear-gradient(135deg, #CB3EFF 2%, #FF5636 100%);
+    font-size: 22px;
+    color: #fff;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+  .image{
+    width: 100%;
+    height: 595px;
+    margin-bottom: -170px;
+  }
+  .ticketlist{
+    width: 630px;
+    margin: 30px auto 0;
+    .setticket{
+      width: 100%;
+      height: 175px;
+      margin: 10px 0;
+    }
+  }
+  .infoDesc{
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin: 40px 0 20px;
+    display: block;
+    .block{
+      display: block;
+    }
+    .yellow{
+      color: #FCEA5A;
+      margin: 0 10px;
+    }
+  }
+  .otherDesc{
+    margin: 40px 0 20px;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .item{
+      width: 100px;
+      height: 100px;
+      position: relative;
+      &.none{
+        border: 4px dashed #BEA1FF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        .que{
+          font-size: 72px;
+          color: #BEA1FF;
+        }
+      }
+      .leader{
+        position: absolute;
+        top: 90px;
+        left: 10px;
+        width: 80px;
+        text-align: center;
+        font-size: 24px;
+        border-radius: 100px;
+        color: #FF413B;
+        background: #FFD267;
+        border: 4px solid #FFF8F2;
+      }
+    }
+    .avatar{
+      box-sizing: border-box;
+      border: 4px solid #FFD267;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .btn{
+    width: 610px;
+    height: 100px;
+    border-radius: 100px;
+    margin: 20px auto;
+    background-image: linear-gradient(-180deg, #FF8B79 0%, #FC5F46 100%);
+    font-size: 46px;
+    color: #FFFFFF;
+    position: relative;
+    animation: shake 1s ease forwards infinite;
+    @keyframes shake {
+      0%    {transform: scale(1);}
+      50%    {transform: scale(1.05);}
+      100%  {transform: scale(1)}
+    }
+  }
+  .list{
+    width: 610px;
+    border-radius: 20px;
+    background: #F4F2E6;
+    margin: 50px auto;
+    padding: 30px 0;
+    .title{
+      color: #000;
+      font-size: 30px;
+      text-align: center;
+      margin: 20px;
+    }
+    .friend{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+      margin: 20px 0;
+      .info{
+        display: flex;
+        align-items: center;
+        .avatar{
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          &.none{
+            border: 1px dotted #9B9B9B;
+          }
+        }
+        .name{
+          margin-left: 20px;
+          font-size: 26px;
+          color: #222;
+        }
+      }
+      .desc{
+        font-size: 26px;
+        color: #FF5E51;
+      }
+    }
+  }
+}
+
+.outer{
+  position: relative;
+  border-radius: 8px;
+  background: #BE38FF;
+  padding: 10px;
+  margin: 20px auto;
+  width: 582px;
+}
+.cover{
+  position: relative;
+  overflow: hidden;
+  width: 582px;
+  border-radius: 8px;
+  .item{
+    width: 100%;
+    height: 173px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    box-sizing: border-box;
+    position: relative;
+    // background-image: linear-gradient(-90deg, #FDDF33 1%, #FFEA75 96%);
+    // border: 2px solid #f8df00;
+    // background: url(https://img.xianxiapai.net/saas/couponsBg.png) no-repeat;
+    // background-size: contain;
+    // background-position: center;
+    .info{
+      display: flex;
+      align-items: center;
+      position: relative;
+      .detail{
+        margin-bottom: 10px;
+        flex-direction: column;
+        margin-left: 20px;
+        .topic{
+          font-size: 36px;
+          font-weight: bold;
+          color: #000;
+        }
+        .descr{
+          font-size: 26px;
+          color: #7D6B00;
+          width: 366px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp:2;
+          -webkit-box-orient: vertical;
+        }
+        .desc{
+          margin-top: 10px;
+          .num{
+            margin-top: 10px;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+    .ticketInfo{
+      width: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .limit{
+        position: absolute;
+        top: 20px;
+        right: 0;
+        width: 140px;
+        height: 42px;
+        background: #FF5E51;
+        color: #fff;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        font-size: 22px;
+      }
+      .cost{
+        color: #000;
+        font-size: 24px;
+        margin-top: 10px;
+        text{
+          font-size: 60px;
+        }
+      }
+    }
+  }
+  .cir{
+    position: absolute;
+    left: 390px;
+    width: 20px;
+    height: 20px;
+    background: #f7f7f7;
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+  }
+  .topCir{
+    top: -10px;
+  }
+  .dotted{
+    position: absolute;
+    top: 26px;
+    left: 400px;
+    width: 1px;
+    height: 140px;
+    border-left: 1px dotted #CCCCCC
+  }
+  .bottomCir{
+    bottom: -10px;
+  }
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

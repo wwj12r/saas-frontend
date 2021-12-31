@@ -1,0 +1,83 @@
+.tips{
+  background: #FFEFF2;
+  font-size: 26px;
+  height: 80px;
+  color: #391B1B;
+  .red{
+    color: #FF5E51;
+    margin: 10px;
+  }
+  .flex{
+    font-weight: bold;
+    border: 3px solid #FF5E51;
+    border-radius: 50%;
+    color: #FF5E51;
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+  }
+}
+.item{
+  margin: 10px 0;
+  width: 100%;
+  background: #fff;
+  .title{
+    font-size: 22px;
+    color: #999;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #e6e6e6;
+    padding: 0 30px;
+  }
+  .movieBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #CFCBBB;
+    &:last-child{
+      border-bottom: none;
+    }
+    .info{
+      padding: 30px;
+      display: flex;
+      padding-bottom: 30px;
+      .img{
+        width: 160px;
+        height: 160px;
+        background: #FFFFFF;
+        border: 1px solid #E6E6E6;
+      }
+      .movieInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 40px;
+        flex: 1;
+        .name{
+          font-size: 26px;
+          .num{
+            font-size: 22px;
+            color: #666;
+          }
+        }
+        .price{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 26px;
+          color: #999;
+        }
+      }
+    }
+    .btn{
+      width: 130px;
+      height: 50px;
+      border-radius: 100px;
+      font-size: 24px;
+      background: #FF5E51;
+      color: #fff;
+      margin-right: 30px;
+    }
+  }
+}

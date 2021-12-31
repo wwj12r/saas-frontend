@@ -1,0 +1,160 @@
+
+.item{
+  width: 630px;
+  height: 174px;
+  background: #CCCCCC;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-right: 40px;
+  position: relative;
+  .info{
+    display: flex;
+    align-items: center;
+    position: relative;
+    .detail{
+      display: flex;
+      align-content: space-between;
+      justify-content: space-between;
+      flex-direction: column;
+      margin-left: 20px;
+      .title{
+        .topic{
+          font-size: 36px;
+          font-weight: bold;
+        }
+        .descr{
+          font-size: 24px;
+          color: #666;
+          width: 270px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp:2;
+          -webkit-box-orient: vertical;
+        }
+      }
+      .desc{
+        margin-top: 10px;
+        .num{
+          margin-top: 10px;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  .ticketInfo{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tips{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 111px;
+    height: 122px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .des{
+    font-size: 22px;
+    text-align: center;
+  }
+  .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    .cost{
+      font-size: 24px;
+      line-height: 50px;
+      text{
+        font-size: 70px;
+      }
+    }
+    .desc{
+      width: 128px;
+      height: 34px;
+      color: #fff;
+      font-size: 22px;
+      background: #FC5F46;
+      border-radius: 100px;
+    }
+  }
+  &.used,&.timeout,&.nextOne{
+    &.child0{
+      background-image: linear-gradient(90deg, #F4D5AC 0%, #FFF5DF 100%);
+    }
+    &.child1{
+      background-image: linear-gradient(-90deg, #FFE994 0%, #FFDC66 100%);
+    }
+    &.child2{
+      background-image: linear-gradient(90deg, #F4D5AC 0%, #FFF5DF 100%);
+    }
+    &.child3{
+      background-image: linear-gradient(-90deg, #FFE994 0%, #FFDC66 100%);
+    }
+    &.child4{
+      background-image: linear-gradient(-90deg, #ADE4CB 1%, #D8EFE5 96%);
+    }
+  }
+  &.used{
+    .tips{
+      background-image: url(https://img.xianxiapai.net/saas/given.png);
+    }
+  }
+  &.timeout{
+    .tips{
+      background-image: url(https://img.xianxiapai.net/saas/timeout.png);
+    }
+  }
+}
+.cover{
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto;
+  width: 630px;
+  .cir{
+    position: absolute;
+    left: 180px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  &.selected.ticket{
+    .ticket{
+      border: 3px solid #FC5F46;
+    }
+    .cir{
+      border: 3px solid #FC5F46;
+    }
+  }
+  &.selected.snack{
+    .snack{
+      border: 3px solid #4AAEE7
+    };
+    .cir{
+      border: 3px solid #4AAEE7;
+    }
+  }
+  .topCir{
+    top: -10px;
+  }
+  .dotted{
+    position: absolute;
+    top: 17px;
+    left: 190px;
+    width: 1px;
+    height: 140px;
+    border-left: 1px dashed #979797
+  }
+  .bottomCir{
+    bottom: -10px;
+  }
+}

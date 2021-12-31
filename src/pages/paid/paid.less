@@ -1,0 +1,74 @@
+page{
+  background: #fff;
+}
+.body{
+  background: #fff;
+  text-align: center;
+  padding-top: 130px;
+  .top{
+    padding-bottom: 50px;
+    border-bottom: 2px dashed #E2E2E2;
+  }
+  .title{
+    font-size: 44px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before{
+      content: '';
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+      background: url(https://img.xianxiapai.net/saas/gou.png) no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+  .desc{
+    font-size: 24px;
+    color: #7C7C6D;
+    margin: 20px 0 60px;
+  }
+  .btnBox{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 160px;
+    .flex{
+      width: 200px;
+      height: 56px;
+      font-size: 24px;
+      border-radius: 100px;
+      &::before{
+        content: '';
+        width: 22px;
+        height: 22px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-right: 10px;
+      }
+      &.btnl{
+        color: #C98246;
+        background-image: linear-gradient(90deg, #FCF0D9 2%, #F7E1BF 98%);
+        &::before{
+          background-image: url(https://img.xianxiapai.net/saas/btnl.png)
+        }
+      }
+      &.btnr{
+        color: #D75656;
+        background-image: linear-gradient(90deg, #FBE8E5 2%, #F8D9D9 95%);
+        &::before{
+          background-image: url(https://img.xianxiapai.net/saas/btnr.png)
+        }
+      }
+    }
+  }
+}
+.info{
+  .img{
+    width: 445px;
+    margin: 50px auto;
+    display: block;
+  }
+}

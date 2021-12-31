@@ -1,0 +1,214 @@
+.sale{
+  background: #fff;
+}
+.bigBanner{
+  width: 100%;
+  height: 184px;
+  padding-top: 20px;
+  margin: 0 auto -20px;
+  background: #fff;
+  .slide{	
+    text-align: center;	
+    .box{
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      box-sizing: border-box;
+      box-shadow: 0 0 4px 4px #f2f2f2;
+      .slide-image{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.valueMeal{
+  width: 100%;
+  .name{
+    font-size: 30px;
+    margin: 10px 0;
+    margin-left: 40px;
+  }
+  .scroll{
+    width: 100%;
+    display: flex;
+    white-space: nowrap;
+    .scrollBox{
+      margin-left: 20px;
+    }
+  }
+}
+.goodLists{
+  width: 100%;
+  // height: 100vh;
+  display: flex;
+  .goodsBottom{
+    width: 100%;
+    height: 160px;
+  }
+  .goodsName{
+    width: 156px;
+    height: 100vh;
+    background: #eaebea;
+    .name{
+      width: 100%;
+      height: 82px;
+      font-size: 24px;
+      color: #666;
+      &.on{
+        color: #333;
+        font-weight: bold;
+        font-size: 28px;
+        background: #fff;
+      }
+    }
+  }
+  .goods{
+    width: 594px;
+    height: 100vh;
+    .topic{
+      font-size: 24px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 40px;
+      border-bottom: 1px solid #D8D8D8;
+      padding: 20px 40px 20px 0;
+      .gray{
+        color: #999;
+      }
+    }
+  }
+}
+.selected{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 100px;
+  height: 100%;
+  .detail{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    font-size: 28px;
+    box-shadow: inset 0 1px 0 0 #E0E0E0;
+    .title{
+      width: 100%;
+      height: 90px;
+      position: relative;
+      border-bottom: 1px solid #E0E0E0;
+      .close{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 120px;
+        height: 90px;
+        color: #999;
+      }
+    }
+    .selectedList{
+      max-height: 60vh;
+      padding-bottom: 50px;
+      .select{
+        display: flex;
+        width: 100%;
+        height: 147px;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 0 40px;
+        .info{
+          .topic{
+            font-size: 28px;
+          }
+          .description{
+            font-size: 24px;
+            color: #999;
+            width: 450px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+        .num{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          view{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            padding-bottom: 5px;
+            margin: 0 5px;
+          }
+          .minus{
+            border: 1px solid #d2d2d2;
+            border-radius: 50%;
+            color: #d2d2d2
+          }
+          .plus{
+            border-radius: 50%;
+            background: #FC5F46;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+.bottom{
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  box-shadow: inset 0 1px 0 0 #E0E0E0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .shop{
+    width: 100px;
+    height: 100px;
+    background: url(https://img.xianxiapai.net/saas/shop.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    &.gray{
+      opacity: 0.5;
+    }
+    .num{
+      width: 30px;
+      height: 30px;
+      background: #fc5740;
+      color: #fff;
+      font-size: 22px;
+      border-radius: 50%;
+      position: absolute;
+      top: 5px;
+      left: 75px;
+    }
+  }
+  .total{
+    font-size: 24px;
+    color: #666;
+    text{
+      color: #FC5F46;
+      font-size: 36px;
+    }
+    margin-right: 20px;
+  }
+  .btn{
+    width: 250px;
+    height: 100px;
+    background-image: linear-gradient(-135deg, #FF6C8B 0%, #FB6B63 100%);
+    font-size: 30px;
+    color: #fff;
+  }
+}

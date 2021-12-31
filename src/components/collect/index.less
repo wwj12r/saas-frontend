@@ -1,0 +1,87 @@
+.tips{
+  position: fixed;
+  top: 10px;
+  left: 75px;
+  background: rgba(255,94,81,0.90);
+  width: 600px;
+  height: 75px;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-size: 26px;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    width: 0px;
+    height: 0px;
+    line-height: 0px;
+    left: 523px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent rgba(255,94,81,0.90) transparent;
+  }
+  .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #FF5E51;
+    font-size: 24px;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+  }
+}
+.collectTips{
+  position: fixed;
+  top: 0;left: 0;
+  width: 100%;height: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 200;
+  .collectBg{
+    position: relative;
+    .applogo{
+      position: absolute;
+      top: 649px;
+      left: 206px;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+    }
+    .appname{
+      position: absolute;
+      top: 716px;
+      left: 196px;
+      width: 80px;
+      text-align: center;
+      font-size: 16px;
+      color: #fff;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .addBtn{
+      width: 522px;
+      height: 88px;
+      border-radius: 12px;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 36px;
+      margin: 100px auto 0;
+      background-image: linear-gradient(45deg, #FF5E51 0%, #FF8851 100%);
+    }
+  }
+  .img{
+    width: 520px;
+    height: 782px;
+    margin: 50px auto;
+    display: block;
+  }
+}

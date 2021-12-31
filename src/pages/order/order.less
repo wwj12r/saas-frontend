@@ -1,0 +1,251 @@
+.order{
+  padding-top: 1px;
+  padding-bottom: 260px;
+}
+.preload{
+  position: absolute;
+  top:100%;
+  left: 100%;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.counting{
+  width: 100%;
+  height: 60px;
+  background: #FEF5BE;
+  color: #FE952B;
+  font-size: 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.movieMenu,.snack,.vipCard,.bindPhone,.rules{
+  background: #fff;
+  width: 100%;
+}
+.openVip{
+  align-items: center;
+  display: flex;
+  height: 120px;
+  justify-content: space-between;
+  padding: 0 40px;
+  margin-top: 20px;
+  background: #fff;
+  .left{
+    display: flex;
+    align-items: center;
+    .icon{
+      width: 48px;
+      height: 48px;
+      margin-right: 25px;
+      background: url('https://img.xianxiapai.net/glass/vipcard.png') no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+    .info{
+      .title{
+        font-size: 26px;
+      }
+      .desc{
+        font-size: 24px;
+        color: #999;
+        text{
+          color: #FC5F46;
+        }
+      }
+    }
+  }
+  .switch{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    position: relative;
+    .gou{
+      width: 48px;
+      height: 48px;
+      margin-left: 20px;
+      border: 2px solid #D8D8D8;
+      border-radius: 50%;
+      box-sizing: border-box;
+      &.on{
+        background: url(https://img.xianxiapai.net/saas/gouy.png) no-repeat;
+        background-position: center;
+        background-size: contain;
+        border: none;
+      }
+    }
+    .saveTips{
+      position: absolute;
+      top: 165%;
+      right: -10px;
+      white-space: nowrap;
+      color: #fff;
+      background: rgba(42,42,42,0.90);
+      box-shadow: 0 -4px 8px 0 rgba(0,0,0,0.10);
+      padding: 10px 20px;
+      border-radius: 16px;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        width: 0px;
+        height: 0px;
+        line-height: 0px;
+        right: 28px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent rgba(42,42,42,0.90) transparent;
+      }
+    }
+  }
+}
+
+.snack,.vipCard,.bindPhone,.rules{
+  margin-top: 20px;
+}
+
+.snack{
+  .checkMore{
+    font-size: 24px;
+    color: #666;
+    height: 1px;
+    border-bottom: 2px solid #E0E0E0;
+    .flex{
+      background:#fff;
+      width: 180px;
+      &::after{
+        content: 'v';
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 22px;
+        height: 22px;
+        font-size: 18px;
+        border: 2px solid #666;
+        border-radius: 50%;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+.extra{
+  color: #999;
+}
+.red{
+  color: #FC5F46
+}
+.ka{
+  background: #DABA85;
+  padding: 0 5px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 22px;
+  margin-right: 10px;
+  &.red{
+    background: #FC5F46;
+  }
+}
+
+.vipCard{
+  .topic{
+    display: flex;
+    align-items: center;
+  }
+  .topic::before{
+    content: '';
+    display: inline-block;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    background: url('https://img.xianxiapai.net/glass/prepaid.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.bindPhone{
+  .topic{
+    .title{
+      font-size: 26px;
+    }
+    .tips{
+      font-size: 22px;
+      color: #999
+    }
+    text{
+      display: block;
+    }
+  }
+}
+
+.rules{
+  .rulesDesc{
+    padding: 20px 40px;
+    view{
+      display: flex;
+      font-size: 24px;
+      color: #666;
+      text{
+        display: block;
+      }
+      .num{
+        width: 40px;
+      }
+      .desc{
+        width: 660px;
+      }
+    }
+  }
+}
+
+
+.bottom{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  .list{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    box-shadow: inset 0 2px 0 0 #E0E0E0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px 0 40px;
+    font-size: 28px;
+    box-sizing: border-box;
+    color: #999;
+    view{
+      position: relative;
+      height: 100%;
+      line-height: 100px;
+      text{
+        color: #FC5F46;
+        font-size: 36px;
+      }
+    }
+    view::after{
+      content: '';
+      position: absolute;
+      top: 42%;
+      width: 0;
+      height: 0px;
+      line-height: 0px;
+      left: 105%;
+      border-width: 6px;
+      border-style: solid;
+      border-color: transparent transparent #999 transparent;
+    }
+  }
+  .btn{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(-225deg, #FF6C8B 0%, #FB6B63 100%);
+    font-size: 36px;
+    color: #fff;
+  }
+}

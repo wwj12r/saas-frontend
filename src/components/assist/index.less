@@ -1,0 +1,240 @@
+
+.top{
+  width: 100%;
+  // background: #fffef0;
+  padding-bottom: 30px;
+  position: relative;
+  .rulesBtn{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 126px;
+    height: 46px;
+    background-image: linear-gradient(90deg, #EFBE31 7%, #F3AB45 95%);
+    font-size: 22px;
+    color: #95541E;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+  .image{
+    width: 100%;
+    height: 748px;
+    margin-bottom: -250px;
+  }
+  .ticketlist{
+    width: 630px;
+    margin: 30px auto 0;
+    .setticket{
+      width: 100%;
+      height: 175px;
+      margin: 10px 0;
+    }
+  }
+  .infoDesc{
+    text-align: center;
+    font-size: 30px;
+    color: #222;
+    margin: 40px 0 20px;
+    display: block;
+    .block{
+      display: block;
+    }
+    .red{
+      color: #FF3222;
+      margin: 0 10px;
+    }
+  }
+  .otherDesc{
+    margin: 40px 0 20px;
+    padding: 0 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .avatar{
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+    }
+    .talk{
+      width: 340px;
+      height: 130px;
+      background: #F4F2E6;
+      border-radius: 20px;
+      font-size: 28px;
+    }
+  }
+  .btn{
+    width: 610px;
+    height: 100px;
+    border-radius: 100px;
+    margin: 20px auto;
+    background-image: linear-gradient(-180deg, #FF8B79 0%, #FC5F46 100%);
+    font-size: 46px;
+    color: #FFFFFF;
+    position: relative;
+    animation: downIn 1s ease forwards infinite;
+    @keyframes downIn {
+      0%    {transform: scale(1);}
+      50%    {transform: scale(1.05);}
+      100%  {transform: scale(1)}
+    }
+  }
+  .list{
+    width: 610px;
+    border-radius: 20px;
+    background: #F4F2E6;
+    margin: 50px auto;
+    padding: 30px 0;
+    .title{
+      color: #000;
+      font-size: 30px;
+      text-align: center;
+      margin: 20px;
+    }
+    .friend{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+      margin: 20px 0;
+      .info{
+        display: flex;
+        align-items: center;
+        .avatar{
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          &.none{
+            border: 1px dotted #9B9B9B;
+          }
+        }
+        .name{
+          margin-left: 20px;
+          font-size: 26px;
+          color: #222;
+        }
+      }
+      .desc{
+        font-size: 26px;
+        color: #FF5E51;
+      }
+    }
+  }
+}
+
+.outer{
+  position: relative;
+  border-radius: 8px;
+  background: #FFB123;
+  padding: 10px;
+  margin: 20px auto;
+  width: 582px;
+}
+.cover{
+  position: relative;
+  overflow: hidden;
+  width: 582px;
+  border-radius: 8px;
+  .item{
+    width: 100%;
+    height: 173px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    box-sizing: border-box;
+    position: relative;
+    // background-image: linear-gradient(-90deg, #FDDF33 1%, #FFEA75 96%);
+    // border: 2px solid #f8df00;
+    // background: url(https://img.xianxiapai.net/saas/couponsBg.png) no-repeat;
+    // background-size: contain;
+    // background-position: center;
+    .info{
+      display: flex;
+      align-items: center;
+      position: relative;
+      .detail{
+        margin-bottom: 10px;
+        flex-direction: column;
+        margin-left: 20px;
+        .topic{
+          font-size: 36px;
+          font-weight: bold;
+          color: #000;
+        }
+        .descr{
+          font-size: 26px;
+          color: #7D6B00;
+          width: 366px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp:2;
+          -webkit-box-orient: vertical;
+        }
+        .desc{
+          margin-top: 10px;
+          .num{
+            margin-top: 10px;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+    .ticketInfo{
+      width: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .limit{
+        position: absolute;
+        top: 20px;
+        right: 0;
+        width: 140px;
+        height: 42px;
+        background: #FF5E51;
+        color: #fff;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        font-size: 22px;
+      }
+      .cost{
+        color: #000;
+        font-size: 24px;
+        margin-top: 10px;
+        text{
+          font-size: 60px;
+        }
+      }
+    }
+  }
+  .cir{
+    position: absolute;
+    left: 390px;
+    width: 20px;
+    height: 20px;
+    background: #f7f7f7;
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+  }
+  .topCir{
+    top: -10px;
+  }
+  .dotted{
+    position: absolute;
+    top: 26px;
+    left: 400px;
+    width: 1px;
+    height: 140px;
+    border-left: 1px dotted #CCCCCC
+  }
+  .bottomCir{
+    bottom: -10px;
+  }
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

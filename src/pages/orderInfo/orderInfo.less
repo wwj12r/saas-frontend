@@ -1,0 +1,143 @@
+.success{
+  padding-top: 20px;
+  .showIcon{
+    position: relative;
+    .successTxt{
+      width: 100%;
+      height: 160px;
+      font-size: 32px;
+      &::before{
+        content: '';
+        // position: absolute;
+        // top: 56px;
+        // left: 250px;
+        width: 48px;
+        height: 48px;
+        display: block;
+        margin-right: 25px;
+        background: url('https://img.xianxiapai.net/glass/suc.png') no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+    .btn{
+      position: absolute;
+      top: 56px;
+      left: 40px;
+      width: 180px;
+      height: 60px;
+      font-size: 28px;
+      border-radius: 100px;
+      box-shadow: 0 2px 6px 0 #EBEBEB;
+      background: #fff;
+      color: #666666;
+    }
+  }
+  .whiteBg{
+    background: #fff;
+  }
+  .qrcode,.getSnack,.orderDetail,.rules{
+    background: #fff;
+    width: 100%;
+    margin-top: 20px;
+    .topic{
+      text{
+        color: #FC5F46;
+        margin: 0 5px;
+      }
+    }
+    .code{
+      padding-bottom: 80px;
+      position: relative;
+      .status{
+        position: absolute;
+        top: 10px;
+        left: 570px;
+        width: 55px;
+        height: 136px;
+        background: #FF5E51;
+        color: #fff;
+        font-size: 32px;
+        padding: 10px 0;
+        text-align: center;
+      }
+      .blockl{
+        display: flex;
+        position: absolute;
+        top: 185px;
+        left: 126px;
+        width: 500px;
+        height: 0px;
+        z-index: 1;
+        border-top: 15px solid #b3b3b3;
+        transform: rotateZ(45deg);
+        transform-origin: 50% 50%;
+      }
+      .none{
+        text-decoration: line-through;
+      }
+      &.gray{
+        image,text{
+          opacity: 0.3;
+        }
+      }
+      image{
+        width: 380px;
+        height: 380px;
+        display: block;
+        margin: 50px auto 30px;
+      }
+      >text{
+        font-size: 28px;
+        display: block;
+        text-align: center;
+        text{
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+  .orderDetail{
+    .info{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      .detail{
+        font-size: 24px;
+        color: #999;
+      }
+      .contact{
+        position: relative;
+        font-size: 24px;
+        .customer{
+          width: 48px;
+          height: 48px;
+          margin: 10px auto;
+          background: url('https://img.xianxiapai.net/saas/contact.png') no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+      }
+    }
+  }
+  .rules{
+    .rulesDesc{
+      padding: 20px 40px;
+      view{
+        display: flex;
+        font-size: 24px;
+        color: #666;
+        text{
+          display: block;
+        }
+        .num{
+          width: 40px;
+        }
+        .desc{
+          width: 660px;
+        }
+      }
+    }
+  }
+}

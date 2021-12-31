@@ -1,0 +1,321 @@
+.body{
+  button{
+    position: absolute;
+    top: 0;left: 0;width: 100%;height: 100%;
+    opacity:0;
+  }
+}
+.bottom{
+  background: #fff;
+  padding-top: 40px;
+  .topic{
+    .gang{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .point{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .title{
+          font-size: 30px;
+          color: #FC5F46;
+        }
+        .title::before,.title::after{
+          content: '';
+          display: inline-block;
+          background: #FC5F46;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          margin: 0 10px;
+        }
+      }
+      .point::before,.point::after{
+        content: '';
+        display: inline-block;
+        background: #F8E71C;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        margin: 0 10px;
+      }
+    }
+    .gang::before,.gang::after{
+      content: '';
+      display: inline-block;
+      background: #f4f4f4;
+      width: 50px;
+      height: 2px;
+      margin: 0 10px;
+    }
+  }
+  .desc{
+    font-size: 30px;
+    color: #222;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .movieBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    .movie{
+      width: 210px;
+      text-align: center;
+      margin: 20px 0;
+      &.empty{
+        // width: 0;
+        height: 0;
+        opacity: 0;
+      }
+      .image{
+        width: 100%;
+        height: 290px;
+        box-shadow: 0 3px 6px 0 #666;
+        border-radius: 8px;
+      }
+      .name{
+        margin-top: 10px;
+        font-size: 32px;
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .price{
+        margin-top: 10px;
+        font-size: 26px;
+        color: #666;
+      }
+      .btn{
+        margin-top: 10px;
+        width: 200px;
+        height: 52px;
+        border: 1px solid #FC5F46;
+        color: #FC5F46;
+        font-size: 24px;
+        border-radius: 100px;
+      }
+    }
+  }
+}
+
+.theone{
+  background: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+  .topic{
+    color: #222;
+    font-size: 36px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .titleIcon{
+    width: 573px;
+    height: 46px;
+    margin: 10px auto;
+    background: url(https://img.xianxiapai.net/saas/rpTitle2.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .box{
+    width: 700px;
+    height: 400px;
+    background-image: linear-gradient(-179deg, #FE987C 0%, #FF6C57 100%);
+    box-shadow: 0 6px 20px 0 #FFA69E;
+    border-radius: 20px;
+    margin: 20px auto;
+    display: flex;
+    padding: 0 30px;
+    box-sizing: border-box;
+    align-items: center;
+    position: relative;
+    .tips{
+      position: absolute;
+      top: 90px;
+      right: 0;
+      width: 110px;
+      height: 46px;
+      background: #F8E71C;
+      font-size: 22px;
+      color: #000;
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 100px;
+    }
+    .img{
+      width: 232px;
+      height: 320px;
+    }
+    .info{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 320px;
+      text-align: left;
+      margin-left: 30px;
+      color: #fff;
+      flex: 1;
+      .title{
+        font-size: 36px;
+      }
+      .desc{
+        font-size: 24px;
+      }
+      .price{
+        font-size: 28px;
+        margin-bottom: 20px;
+        text{
+          font-size: 46px;
+        }
+      }
+      .notPrice{
+        font-size: 22px;
+        text-decoration: line-through;
+        margin-bottom: 20px;
+      }
+      .btnBox{
+        display: flex;
+        justify-content: space-between;
+        .flex{
+          width: 180px;
+          height: 52px;
+          font-size: 28px;
+          border-radius: 100px;
+          box-sizing: border-box;
+        }
+        .btnl{
+          border: 2px solid #fff;
+          color: #fff;
+        }
+        .btnr{
+          background: #E21F00;
+          color: #F8E71C;
+        }
+      }
+    }
+  }
+}
+
+
+.rulesWindow,.assistWindow{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // background: rgba(0,0,0,0.5);
+  text-align: center;
+  z-index: 9;
+  .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+  }
+  .modal{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    left: 85px;
+    width: 580px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 16px;
+    padding-top: 80px;
+    .close{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 80px;
+      height: 80px;
+      background: url(https://img.xianxiapai.net/glass/close.png) no-repeat;
+      background-size: 25px;
+      background-position: center;
+    }
+    .title{
+      color: #666;
+      font-size: 32px;
+    }
+    .titleIcon{
+      width: 288px;
+      height: 34.5px;
+      margin: 10px auto;
+      background: url(https://img.xianxiapai.net/glass/rpTitle.png) no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    .topic{
+      position: absolute;
+      top: 80px;left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 40px;
+      color: #222;
+      font-weight: bold;
+    }
+    .info{
+      font-size: 26px;
+      color: #666;
+      margin: 30px 80px;
+    }
+    .rulesDesc{
+      width: 100%;
+      padding: 20px 30px 50px 50px;
+      font-size: 24px;
+      box-sizing: border-box;
+      view{
+        display: flex;
+        font-size: 24px;
+        color: #666666;
+        text{
+          display: block;
+        }
+        .num{
+          width: 40px;
+          font-size: 40px;
+          color: #FF9D95;
+        }
+        .desc{
+          width: 660px;
+          text-align: left;
+          line-height: 40px;
+          margin: 8px 0;
+          position: relative;
+          &::before{
+            content: '';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 17px;
+            left: -20px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-image: linear-gradient(0deg, #FFD6D0 0%, #FF9D95 100%);
+          }
+        }
+      }
+    }
+    .btn{
+      margin: 100px auto 50px;
+      width: 500px;
+      height: 88px;
+      border-radius: 20px;
+      position: relative;
+      background-image: linear-gradient(-180deg, #FC5F46 6%, #F83D77 98%);
+      color: #fff;
+    }
+  }
+}

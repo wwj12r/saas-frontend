@@ -1,0 +1,295 @@
+.top{
+  width: 100%;
+  height: 200px;
+  position: relative;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  background: #fff;
+  z-index: 1000;
+  .title{
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid #E0E0E0;
+    border-top: 1px solid #E0E0E0;
+    padding-left: 40px;
+    box-sizing: border-box;
+    .name{
+      font-size: 32px;
+    }
+    .info{
+      font-size: 24px;
+      color: #666666
+    }
+  }
+  .seat{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+    .seatList{
+      .seatIcon{
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center;
+        &.bestAreaIcon{
+          width: 40px;
+          height: 40px;
+          box-sizing: border-box;
+          border: 2px dashed #ed365a;
+          border-radius: 8px;
+        }
+        &.couple{
+          width: 110px;
+        }
+      }
+    }
+  }
+}
+.movableArea{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+  background: #f7f7f7;
+  .lLine{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    left: 40px;
+    margin-top: -20px;
+    background: rgba(0,0,0,0.15);
+    padding: 20px 0;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 30px;
+    .text {
+      text-align: center;
+      width: 40px;
+    }
+  }
+  .screen{
+    width: 404px;
+    height: 52px;
+    margin: 0 auto;
+    background: #EBEBEB;
+    color: #666;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    &:before{
+      content:'';
+      display:block;
+      width:35px;
+      height:52px;
+      position:absolute;
+      transform:skewX(20deg);
+      background:#EBEBEB;
+      border-bottom-left-radius:18px;
+      left:-20px;
+      top:0;
+    }
+    &:after{
+      content:'';
+      display:block;
+      width:35px;
+      height:52px;
+      position:absolute;
+      transform:skewX(-20deg);
+      background:#EBEBEB;
+      border-bottom-right-radius:18px;
+      top:0;
+      right:-20px;
+    }
+  }
+  .movableView{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+    .seats{
+      width: 50%;
+      height: 50%;
+      margin: 0 80px 220px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .seatView{
+        position: relative;
+        .bestArea{
+          position: absolute;
+          border: 2px dashed #ed365a;
+          border-radius: 8px;
+          z-index: 1;
+          pointer-events:none;
+        }
+      }
+      .mLine{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 1px;
+        height: 100%;
+        border-left: 2px dashed #CACACA;
+        pointer-events: none;
+      }
+      .seatY{
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        .seat{
+          width: 40px;
+          height: 40px;
+          margin: 0 5px;
+          display: inline-block;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          &.empty{
+            opacity: 0;
+          }
+          &.dl{
+            background-position: 0;
+            background-size: 200% 94%;
+            width: 45px;
+            margin-right: 0;
+          }
+          &.dr{
+            background-position: 100%;
+            background-size: 200% 94%;
+            width: 45px;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.bottom{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 20px 0;
+  .cardInfoBanner{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #F9EEDF;
+    box-shadow: inset 0 -1px 0 0 #CACACA;
+    font-size: 26px;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+    .info{
+      color: #391B1B;
+      .red{
+        color: #EC1845;
+      }
+    }
+    .add{
+      width: 110px;
+      height: 50px;
+      color: #fff;
+      border-radius: 8px;
+      background-image: linear-gradient(135deg, #E0AB68 0%, #BF8C58 100%);
+      &.gray{
+        background: rgb(172, 172, 172);
+      }
+    }
+  }
+  .detail{
+    .title{
+      font-size: 24px;
+      color: #666;
+      // margin-bottom: 20px;
+      margin-left: 40px;
+    }
+    .selectedList{
+      width: 100%;
+      // height: 100px;
+      white-space: nowrap;
+      .block{
+        margin-left: 39px;
+        width: 1px;
+        height: 100%;
+        display: inline-block;
+      }
+    }
+  }
+  .autoChoose{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    margin: 20px 0 40px 40px;
+    .numBox{
+      width: 600px;
+      white-space: nowrap;
+      .num{
+        display: inline-block;
+        flex-shrink: 0;
+        width: 100px;
+        height: 60px;
+        margin: 0 10px;
+        border-radius: 8px;
+        background: #eee;
+        .flex{
+          height: 100%;
+        }
+        &:last-child{
+          margin: 0 40px 0 10px;
+        }
+      }
+    }
+  }
+  .btn{
+    width: 670px;
+    height: 88px;
+    margin: 20px auto 0;
+    border-radius: 20px;
+    background-image: linear-gradient(135deg, #FF6C8B 0%, #FB6B63 100%);
+    font-size: 32px;
+    color: #FFFFFF;
+    text{
+      margin-right: 10px;
+    }
+    &.gray{
+      opacity: 0.5;
+    }
+  }
+}
+::-webkit-scrollbar
+{
+display: none
+}
+
+.preload{
+  position: absolute;
+  top:100%;
+  left: 100%;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
